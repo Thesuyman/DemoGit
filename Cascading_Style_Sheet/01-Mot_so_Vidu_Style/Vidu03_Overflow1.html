@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ví dụ xử lý co giãn chiều cao khung ngoài</title>
+<style type="text/css">
+body{ margin:0px; padding:0px;}
+#khung { 	width:auto; 
+			height:auto; /*chiều cao tự động co giãn theo nội dung bên trong*/
+			border:1px blue solid;
+			background:grey;
+			overflow:auto; /*nếu width,height:auto co dãn  theo khung bên trong có thuộc tính float*/
+			zoom:1;/*áp dụng cho trình duyệt safari = overflow:auto; */
+			}
+.sanpham {
+		box-sizing:border-box;/*chiều rộng = width (không cộng thêm padding và border*/
+		width:30%;
+		height:200px;
+		margin:5px;
+		border:1px red solid;
+		float:left;/*các khung sanpham sẽ nằm trôi nổi theo hàng ngang*/
+		/*phải đặt overflow:auto; cho #khung để mở rộng theo .sanpham có float:left*/
+	}
+</style>
+</head>
+
+<body>
+<div id="khung">
+	<div class="sanpham"> sản phẩm 1</div>
+    <div class="sanpham"> sản phẩm 2</div>
+    <div class="sanpham"> sản phẩm 3</div>
+    <div class="sanpham"> sản phẩm 4</div>
+    <div class="sanpham"> sản phẩm 5</div>
+    <div class="sanpham"> sản phẩm 6</div>
+</div>
+</body>
+</html>

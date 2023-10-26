@@ -1,0 +1,18 @@
+@charset "uft-8";
+/* Thiết kế style cho thẻ body, chung cho cả trang*/
+body{font-size: 12px;font-family: Arial } 
+
+/*thiết kế css cho thẻ div có ID= "menu"*/
+#menu {width: 800px ;height: 30px ; margin:0 px ; background-color: rgb(245, 243, 243); }
+
+/*Bước 2*/
+/*Thiết kế css cho thẻ <ul> mà nằm trong thẻ có id="menu", không áp dụng cho các ul khác*/
+#menu ul {padding : 0 px ; margin: 0 px;}
+
+/*Thiết kế css cho thẻ <li> trong <ul> trong thẻ có id="menu" */
+#menu ul li {padding: 5px 10px  ; float: left; list-style: none; }
+
+/* Bước 3: thiết kế css thẻ <a> trong <ul> trong <li> trong thẻ có id=menu>*/
+#menu ul li a {color: rgb(22, 21, 21); text-decoration: none; font-weight:bold;}
+#menu ul li a:hover {color: rgb(242, 7, 7);}
+

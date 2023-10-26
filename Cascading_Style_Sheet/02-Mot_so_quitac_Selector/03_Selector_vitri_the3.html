@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Selector theo vị trí thẻ</title>
+<style type="text/css">
+.sanpham {width:200px; height:300px; border:1px red solid; float:left;
+		margin:5px; text-align:center;}
+/*có dấu cách trước :nth-child(i) thì áp dụng cho thẻ con trong .class (#id, tên thẻ) */
+.sanpham :nth-child(1) { color:green } /*con thứ 1 trong .sanpham*/
+.sanpham :nth-child(2) { color:blue } /*con thứ 2 trong .sanpham*/
+.sanpham :nth-child(3) { color:red} /*con thứ 3 trong .sanpham*/
+</style>
+<body>
+<div class="sanpham">
+	<h3> Tên sản phẩm 1</h3>
+    <p> Hình ảnh 1</p>
+    <p> Giá: 1.000.000 VNĐ</p>
+    <p> Giá cũ: 10.000.000 VNĐ</p>
+</div>
+<div class="sanpham">
+	<h3> Tên sản phẩm 2</h3>
+    <p> Hình ảnh 2</p>
+    <p> Giá: 2.000.000 VNĐ</p>
+    <p> Giá cũ: 10.000.000 VNĐ</p>
+</div>
+<div class="sanpham">
+	<h3> Tên sản phẩm 3</h3>
+    <p> Hình ảnh 3</p>
+    <p> Giá: 3.000.000 VNĐ</p>
+    <p> Giá cũ: 10.000.000 VNĐ</p>
+</div>
+<div class="sanpham">
+	<h3> Tên sản phẩm 4</h3>
+    <p> Hình ảnh 4</p>
+    <p> Giá: 4.000.000 VNĐ</p>
+    <p> Giá cũ: 10.000.000 VNĐ</p>
+</div>
+</body>
+</html>

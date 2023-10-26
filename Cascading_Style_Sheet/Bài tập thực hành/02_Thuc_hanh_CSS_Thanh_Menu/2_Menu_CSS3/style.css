@@ -1,0 +1,16 @@
+body{margin:0;font-family:Arial, Helvetica, sans-serif; font-size:12px;}
+.menu{background:-webkit-gradient(linear,left top, left bottom,from(#ffed8c),to(#ffaf02));/*Chrome & Safari*/
+background:-moz-linear-gradient(top,#ffed8c,#ffaf02);/*Fire Fox*/
+background:-ms-linear-gradient(top,#ffed8c,#ffaf02);/*IE*/
+background:-o-linear-gradient(top,#ffed8c,#ffaf02);/*OPERA*/
+ width:1000px; height:30px; margin:0 auto}
+.menu ul{padding:0; margin:0}
+.menu ul li{list-style:none; float:left;position:relative}
+.menu ul li a{color:#136eb4; font-weight:bold; text-decoration:none;  float:left; padding:7px 15px 8px; text-shadow:1px 1px 2px #fff}
+/*CSS cho menu con*/
+.menu ul ul{position:absolute; background:#FC6; top:30px;width:160px; display:none}
+.menu ul ul li{width:100%;border-bottom:#CCC 1px solid}
+.menu ul ul li a{width:130px}
+/*CSS cho hieu ung di chuot*/
+.menu li:hover>ul{display:block}
+.menu li:hover>a{color:#F00}

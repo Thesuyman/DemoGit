@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time & Date</title>
+    <style>
+        h2 {
+            text-align: center;
+        }
+        
+        .center-button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+            flex-direction: column;
+        }
+        
+        #result {
+            text-align: center;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Chương Trình JavaScript Đầu Tiên</h2>
+    <div class="center-button">
+        <button type="button" onclick="document.getElementById('result').innerHTML = Date()">
+            Click on me to see the Time and Date.
+        </button>
+        <div id="result"></div>
+    </div>
+</body>
+</html

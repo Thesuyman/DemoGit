@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*Bước 1*/
+/*Thiết kế style cho thẻ body, chung cho cả trang*/
+body { font-size:12px; font-family:Arial}
+/*Thiết kế css cho the div co ID="menu" */
+#menu {  width:800px; height:30px; margin:0px auto; background-color:#FF9}
+/*Bước 2*/
+/*Thiết kế css cho thẻ <ul> mà nằm trong thẻ có id="menu", không áp dụng cho các ul khác*/
+#menu ul { padding:0px; margin:0px;}
+/*Thiết kế css cho thẻ <li> trong <ul> trong thẻ có id="menu" */
+#menu ul li { list-style:none; float:left; padding:7px 15px}
+/*Bước 3*/
+/*Thiết kế css cho thẻ <a> trong <li> trong <ul> trong thẻ có id="menu" */
+#menu ul li a { color:#06F; text-decoration:none; font-weight:bold }
+#menu ul li a:hover { color:rgb(254, 1, 1)}

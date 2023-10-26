@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đăng ký</title>
+</head>
+
+<body>
+<h2> Đăng ký thành viên</h2>
+<!--action="" thì submit sẻ gửi dữ liệu tới chính trang hiện tại-->
+<form name="f1" id="f1" action="">
+<fieldset>
+    <legend>Thông tin cá nhân</legend>
+    <p> Họ tên: <input type="text" name="t1" id="t1" placeholder="Nhập họ tên" size="30"> </p>
+    <p> Email: <input type="text" name="t2" id="t2" value="fpt@fpt.vn" size="30"></p>
+    <!-- radio là hộp chọn nhóm loại trừ nhau: Các radio cùng nhóm phải có name = nhau-->
+    <p> Giới tính:
+        <label for="r1">Nam:</label> 
+        <input type="radio" name="rGioitinh" id="r1" value="Male" checked>
+        <label for="r2">Nữ: </label>
+        <input type="radio" name="rGioitinh" id="r2" value="Female">
+    </p>
+</fieldset>
+<fieldset>
+    <legend>thông tin khác</legend>
+<p>
+	Sở thích:
+    <label for="c1">Thể thao</label> 
+    <input type="checkbox" name="c1" id="c1" value="Sport" checked>
+    <label for="c2">Nghe nhạc</label> 
+    <input type="checkbox" name="c2" id="c2" value="Music">
+</p>
+<p>
+	Ngành học:
+	<select name="s1" id="s1" size="1">
+    	<option value=""> Chọn ngành học</option>
+    	<option value="IT"> Công nghệ thông tin</option>
+        <option value="English" selected>Ngoại ngữ - Tiếng Anh</option>
+        <option value="Economic"> Kinh tế</option>
+    </select>
+</p>
+<p>
+	Giới thiệu:<br>
+    <textarea name="t3" id="t3" rows="5" cols="50"></textarea>
+</p>
+</fieldset>
+<p>
+	<input type="submit" name="b1" id="b1" value="Đồng ý">
+    <input type="reset" name="b2" id="b2" value="Nhập lại">
+</p>
+</form>
+</body>
+</html>

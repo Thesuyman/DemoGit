@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ví dụ Margin - padding</title>
+<style type="text/css">
+body {
+	margin: 0px; /*04 lề của toàn bộ trang web sẽ sát 4 cạnh trình duỵệt*/
+	color:blue; /*màu chữ cho toàn bộ trang web*/
+}
+/*đặt màu nền cho tất cả thẻ span*/
+span {
+	background: #999;
+}
+/*thiết kế style cho thẻ có id=div1*/
+#div1 {
+	/*đường viền của khung*/
+	border-width:1px;
+	border-color:red;
+	border-style:solid;
+	
+	text-align: justify;
+	/*padding: lề trong - khoảng trống giữa viền với content bên trong khung*/
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	
+	/*margin: lề ngoài - khoảng trống giữa viền với bên ngoài khung*/
+	margin-top: 20px;
+	margin-left: 30px;
+	margin-right: 40px;
+	margin-bottom: 50px;
+}
+/*thiết kế style cho thẻ có id=div2*/
+#div2 {
+	border: 2px blue dashed; 
+	/*viết gộp các giá trị vào chung 1 thuộc tính*/
+	margin:10px 30px; /*10px (top và bottom), 30px (left và right)*/
+	padding: 10px 20px 30px 40px; /*top=10px, right=20px, bottom=30px, left=40px*/
+	background-color:#FF9;
+}
+/*
+padding: x1; => áp dụng cho cả 4 cạnh
+padding: x1 x2; => x1: top và bottom, x2: left và right
+padding: x1 x2 x3; => x1: top, x2: left và right, x3: bottom
+padding: x1 x2 x3 x4 => x1: top, x2: right, x3:bottom, x4: left
+*/
+</style>
+</head>
+
+<body>
+    <div id="div1"> 
+        <span>
+        Các thợ lặn nước ngoài và đặc nhiệm hải quân Thái Lan đã giúp chiến dịch giải cứu đội bóng thiếu niên diễn ra thành công, đưa các em từ trong hang tối ra ngoài ánh sáng sau gần 3 tuần bị mắc kẹt. 
+        </span>
+    </div>
+    <div id="div2"> 
+        <span>
+        Các thợ lặn nước ngoài và đặc nhiệm hải quân Thái Lan đã giúp chiến dịch giải cứu đội bóng thiếu niên diễn ra thành công, đưa các em từ trong hang tối ra ngoài ánh sáng sau gần 3 tuần bị mắc kẹt. 
+        </span>
+    </div>
+</body>
+</html>

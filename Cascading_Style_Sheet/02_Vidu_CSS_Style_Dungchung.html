@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ CSS</title>
+    <style type="text/css">
+        /*Gắn style qua tên thẻ - Bộ chọn (Selector) qua tên thẻ*/
+        h1 { color:blueviolet }
+        h2 {color:blue}
+        h1,h2 { text-align:center;} /*style cho <h1> và <h2> căn giữa*/
+        /*thiết kế style cho tất cả thẻ <a>: bỏ gạch chân, màu green,....*/
+        a {text-decoration:none; color: green; 
+            font-size:20px; font-family:Tahoma;}
+        /*thiết lập style cho các thẻ <a> khi di chuột qua: màu hồng, gạch chân*/    
+        a:hover {color:pink; text-decoration: underline;}    
+        /*thiết lập styel cho mọi thẻ <ul> dùng biểu tượng ô vuông*/    
+        ul {list-style: square;}
+        /*các thẻ <span> sẽ có chữ đậm*/
+        span {font-weight: bold;}
+        
+        /*dùng #id và .class để đặt tên riêng khi gắn style*/
+        /*gắn style qua id - id selector: thường dùng cho 1 thẻ duy nhất*/
+        /*thiết lập style cho thẻ có id=Khung_monhoc*/
+        #Khung_monhoc { width: 800px; height: auto;  
+                    border:2px black solid; /*viền dày 2px, màu đen, nét liền*/
+                    margin:10px auto; 
+                    /*lề trên và dưới: 10px, lề trái và phải: tự động để khung căn giữa*/
+                }
+
+        /*gắn style qua thuộc tính class - class selector: thường áp dụng cho nhiều thẻ*/
+        /*thiết lập style cho thẻ có class=DSmonhoc*/
+        .DSmonhoc {width: 400px; height: auto;
+                border-width: 1px; border-color: blue; border-style: solid;
+                border-radius: 10px;
+                margin-top:10px; margin-left: auto; margin-right: auto;}
+        /*thiết lập style cho thẻ có class=DSmonhoc_h2*/
+        .DSmonhoc_h2 {background-color: grey; color: white;
+                padding-top: 5px; padding-bottom: 5px; 
+                margin-top: 0px; ;
+                text-align: center;
+                border-radius: 10px 10px 0px 0px;}
+    </style>
+</head>
+<body>
+    <h1>Thiết kế trang WEB</h1>
+    <h1>Sử dụng bảng Style dùng chung</h1>
+    <h2>Sử dụng bộ chọn qua tên thẻ, class và id</h2>
+    <a href="http://ioit.ac.vn">Viện Công nghệ thông tin</a>
+    <br>
+    <a href="http://thanglong.edu.vn">Đại học <span>Thăng Long</span></a>
+    <div id="Khung_monhoc">
+        <div class="DSmonhoc">
+            <h2 class="DSmonhoc_h2">Danh sách môn học WEB</h2>
+            <ul>
+                <li><span>HTML</span> - Hyper Text Markup Language</li>
+                <li><span>CSS</span> - Cascading Style Sheet</li>
+                <li><span>JS</span> - JavaScript Programing Language</li>
+            </ul>
+        </div>
+        <div class="DSmonhoc">    
+            <h2 class="DSmonhoc_h2">Danh sách môn học Quản trị mạng</h2>
+            <ul >
+                <li><span>Net1</span> - Lý thuyết mạng</li>
+                <li><span>Net2</span> - Lắp đặt mạng</li>
+                <li><span>Net3</span> - Bảo mật mạng</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>

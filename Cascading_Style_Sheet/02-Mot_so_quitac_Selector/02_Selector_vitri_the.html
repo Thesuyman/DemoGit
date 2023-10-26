@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Selector theo vị trí thẻ</title>
+<style type="text/css">
+#table1 { width:300px; border-collapse:collapse; border:1px red solid}
+tr:first-child {background:green !important; font-weight:bold;}/*thẻ tr đầu tiên*/
+tr:nth-child(odd) {background:yellow}/* các thẻ tr ở vị trí lẻ (1-3-5)*/
+tr:nth-child(even) {background:pink}/* các thẻ tr ở vị trí chẵn (2-4-6)*/
+
+tr:nth-child(1) {font-style:italic; color:white} /*thẻ tr thứ 1 - tương đương :first-child*/
+tr:nth-child(2) {text-decoration:underline;} /*thẻ tr thứ 2*/
+tr:hover { background:white; text-decoration:underline;}/*hover di chuột qua thẻ tr*/
+tr:first-child:hover {background:green}
+</style>
+<body>
+<table id="table1" border="1" >
+	<tr> 	<td> STT </td> <td> Tên món ăn </td>   </tr>
+    <tr>   	<td> 1 </td> <td> Phở bò </td>   </tr>
+    <tr>   	<td> 2 </td> <td> Bánh mỳ </td>  </tr>
+    <tr>   	<td> 3 </td> <td> Bánh cuốn </td>   </tr>
+    <tr>   	<td> 4 </td> <td> Xôi xéo </td>    </tr>
+    <tr>   	<td> 5 </td> <td> Bánh cuốn </td>   </tr>
+    <tr>   	<td> 6 </td> <td> Xôi xéo </td>    </tr>
+    <tr>   	<td> 7 </td> <td> Bánh cuốn </td>   </tr>
+    <tr>   	<td> 8 </td> <td> Xôi xéo </td>    </tr>
+</table>
+</body>
+</html>

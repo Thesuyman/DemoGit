@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+/*style chung cho mọi thẻ input*/
+input { border-radius:10px; padding:5px; margin:5px;border:none;}
+/*style cho các input khi được nhận focus*/
+input:focus {border:1px red solid; background:#FC3; outline:none}
+/*style cho các thẻ input với thuộc_tinh=giá_tri tương ứng*/
+input[type=text],[type=password] { width:180px; color:red;}
+input[type=submit],[type=reset] { width:80px; background:#999; color:white}
+
+

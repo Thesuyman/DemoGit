@@ -1,0 +1,28 @@
+       /*Gắn style qua tên thẻ - Bộ chọn (Selector) qua tên thẻ*/
+       h1 { color:rgb(102, 255, 0); }
+       h2 {color:blue} /*mọi thẻ h2 trong trang web*/
+       h1,h2 { text-align:center;}
+       a {text-decoration:none; color: green; 
+           font-size:20px; font-family:Tahoma;}
+       a:hover {color:pink; text-decoration: underline;}    
+       ul {list-style: square;}
+       span {background-color: yellow;}/*tất cả span trong trang web đều màu vàng*/
+       /*gắn style qua id - id selector*/
+       #Khung_monhoc { width: 800px; height: auto;  border:2px black solid;
+                   margin:10px auto}
+       /*gắn style qua thuộc tính class - class selector*/
+       .DSmonhoc {width: 400px; height: auto;
+               border-width: 1px; border-color: blue; border-style: solid;
+               border-radius: 10px;
+               margin-top:10px; margin-left: auto; margin-right: auto;}
+       /*gắn style qua quan hệ phân cấp*/     
+       /* áp dụng style cho tất các thẻ h2 mà nằm trong id="Khung_monhoc"*/   
+       #Khung_monhoc h2 {background-color: grey; color: white;
+               padding-top: 5px; padding-bottom: 5px; 
+               margin-top: 0px; ;
+               text-align: center;
+               border-radius: 10px 10px 0px 0px;}
+       /*chỉ áp dụng cho các h2 là con trực tiếp của id="Khung_monhoc"*/
+       #Khung_monhoc>h2 {border-radius: 0px 0px 0px 0px;}
+       /*áp dụng cho những thẻ span mà nằm trong class="DSmonhoc"*/
+       .DSmonhoc span {font-weight: bold; font-style: italic;}

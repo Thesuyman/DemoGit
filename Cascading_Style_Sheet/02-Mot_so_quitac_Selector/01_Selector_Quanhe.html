@@ -1,0 +1,34 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Chọn Style qua quan hệ giữa các thẻ</title>
+<style type="text/css">
+	/*chọn tất cả thẻ div và thẻ p*/
+	div, p {color:red} 
+	div {border:1px blue solid; margin:10px}
+	/*chọn tất cả thẻ có id = div1*/
+	#div1 { background:#CCC} 
+	#div2 { background:rgb(131, 149, 171)} 
+	/*dấu cách để chọn tất cả thẻ p mà nằm bên trong id=div1*/
+	#div1 p { color:green;} 
+	/*dấu >p chỉ chọn những thẻ p mà là con trực tiếp của id=div1*/
+	#div1 > p { text-align:center;}
+	/*dấu + p chỉ chọn 1 thẻ p mà nằm ngay sau thẻ id=div1*/
+	#div1 + p { background-color:yellow;}
+</style>
+</head>
+
+<body>
+<p> 1.thẻ đoạn văn bên ngoài thẻ div</p>
+<div id="div1">
+	<p> 2.thẻ đoạn văn con thẻ div 1</p>
+    <p> 3.thẻ đoạn văn con thẻ div 1</p>
+    <div id="div2"> <!--div2 và 2 thẻ p (2., 3.) là con trực tiếp của id=div1--> 
+    	<p> 4.thẻ đoạn văn con thẻ div 1</p> <!--p (4.) là con trực tiếp của id=div2-->
+     </div>
+</div>
+<p> 5.thẻ đoạn văn con thẻ div 1</p>
+<p> 6.thẻ đoạn văn con thẻ div 1</p>
+</body>
+</html>

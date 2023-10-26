@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Đăng ký</title>
+</head>
+
+<body>
+<h2> Đăng ký thành viên</h2>
+<!--action="" thì submit sẻ gửi dữ liệu tới chính trang hiện tại-->
+<form name="f1" id="f1" action="xuly.php">
+<p> Họ tên: <input type="text" name="t1" id="t1" placeholder="Nhập họ tên"> </p>
+<p> Email: <input type="text" name="t2" id="t2" placeholder="abc@tenmien.com"></p>
+<!-- radio là hộp chọn nhóm loại trừ nhau: 
+    Các radio cùng nhóm phải có name = nhau-->
+<p> Giới tính:
+	Nam: <input type="radio" name="rGioitinh" id="r1" value="Male" checked>
+    Nữ: <input type="radio" name="rGioitinh" id="r2" value="Female">
+</p>
+<p> Thời gian học:
+	Sáng: <input type="radio" name="rTgian" id="r3" value="Sáng">
+    Chiều: <input type="radio" name="rTgian" id="r4" value="Chiều" checked>
+    Tối: <input type="radio" name="rTgian" id="r5" value="Tối">
+</p>
+<p>
+	Sở thích:
+    <label for="c1">Thể thao</label> 
+    <input type="checkbox" name="c1" id="c1" value="Sport">
+    <label for="c2">Nghe nhạc</label> 
+    <input type="checkbox" name="c2" id="c2" value="Music">
+</p>
+<p>
+	Ngành học:
+	<select name="s1" id="s1" size="1"> 
+    	<option value=""> Chọn ngành học</option>
+    	<option value="IT"> Công nghệ thông tin</option>
+        <option value="English">Ngoại ngữ - Tiếng Anh</option>
+        <option value="Economic"> Kinh tế</option>
+    </select>
+    <!--nếu size=1 ở dạng ComboBox, nếu size>1 thì ở dụng ListBox
+      thuộc tinh <select  multiple> để cho phép chọn cùng lúc nhiều dòng (giữ Ctrl và nhấn chuột chọn)
+    -->
+</p>
+<p>
+	Giới thiệu:<br>
+    <textarea name="t3" id="t3" rows="5" cols="50">Nội dung</textarea>
+</p>
+<p>
+    <input type="button" name="b0" id="b0" value="Nút bấm thường">
+	<input type="submit" name="b1" id="b1" value="Đồng ý">
+    <input type="reset" name="b2" id="b2" value="Nhập lại">
+</p>
+</form>
+</body>
+</html>

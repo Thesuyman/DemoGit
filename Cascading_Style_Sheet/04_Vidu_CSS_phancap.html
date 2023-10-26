@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ví dụ CSS</title>
+    <style type="text/css">
+        /*Gắn style qua tên thẻ - Bộ chọn (Selector) qua tên thẻ*/
+        h1 { color:rgb(102, 255, 0); }
+        h2 {color:blue} /*mọi thẻ h2 trong trang web*/
+        h1,h2 { text-align:center;}
+        a {text-decoration:none; color: green; 
+            font-size:20px; font-family:Tahoma;}
+        a:hover {color:pink; text-decoration: underline;}    
+        ul {list-style: square;}
+        span {background-color: yellow;}/*tất cả span trong trang web đều màu vàng*/
+        /*gắn style qua id - id selector*/
+        #Khung_monhoc { width: 800px; height: auto;  border:2px black solid;
+                    margin:10px auto}
+        /*gắn style qua thuộc tính class - class selector*/
+        .DSmonhoc {width: 400px; height: auto;
+                border-width: 1px; border-color: blue; border-style: solid;
+                border-radius: 10px;
+                margin-top:10px; margin-left: auto; margin-right: auto;}
+        /*gắn style qua quan hệ phân cấp*/     
+        /* áp dụng style cho tất các thẻ h2 mà nằm trong id="Khung_monhoc"*/   
+        #Khung_monhoc h2 {background-color: grey; color: white;
+                padding-top: 5px; padding-bottom: 5px; 
+                margin-top: 0px; ;
+                text-align: center;
+                border-radius: 10px 10px 0px 0px;}
+        /*chỉ áp dụng cho các h2 là con trực tiếp của id="Khung_monhoc"*/
+        #Khung_monhoc>h2 {border-radius: 0px 0px 0px 0px;}
+        /*áp dụng cho những thẻ span mà nằm trong class="DSmonhoc"*/
+        .DSmonhoc span {font-weight: bold; font-style: italic;}
+    </style>
+</head>
+<body>
+    <h1>Thiết kế trang WEB</h1>
+    <h1>Sử dụng bảng <span>Style dùng chung</span></h1>
+    <h2>Sử dụng bộ chọn qua tên thẻ, class và id</h2>
+    <a href="http://ioit.ac.vn">Viện Công nghệ thông tin</a>
+    <div id="Khung_monhoc">
+        <h2>Nội dung các khóa học</h2>
+        <div class="DSmonhoc">
+            <h2>Danh sách môn học WEB</h2>
+            <ul>
+                <li><span>HTML</span> - Hyper Text Markup Language</li>
+                <li><span>CSS</span> - Cascading Style Sheet</li>
+                <li><span>JS</span> - JavaScript Programing Language</li>
+            </ul>
+        </div>
+        <div class="DSmonhoc">    
+            <h2>Danh sách môn học Quản trị mạng</h2>
+            <ul >
+                <li><span>Net1</span> - Lý thuyết mạng</li>
+                <li><span>Net2</span> - Lắp đặt mạng</li>
+                <li><span>Net3</span> - Bảo mật mạng</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>
+</html>
